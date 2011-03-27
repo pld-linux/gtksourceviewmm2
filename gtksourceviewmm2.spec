@@ -6,7 +6,7 @@ Summary:	A C++ binding of GtkSourceView2
 Summary(pl.UTF-8):	Wiązania C++ dla GtkSourceView2
 Name:		gtksourceviewmm2
 Version:	2.10.0
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gtksourceviewmm/2.10/gtksourceviewmm-%{version}.tar.bz2
@@ -95,6 +95,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -110,7 +112,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libgtksourceviewmm-2.0.so
-%{_libdir}/libgtksourceviewmm-2.0.la
 %{_libdir}/gtksourceviewmm-2.0
 %{_includedir}/gtksourceviewmm-2.0
 %{_pkgconfigdir}/gtksourceviewmm-2.0.pc

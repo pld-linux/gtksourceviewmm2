@@ -5,12 +5,12 @@
 Summary:	A C++ binding of GtkSourceView2
 Summary(pl.UTF-8):	Wiązania C++ dla GtkSourceView2
 Name:		gtksourceviewmm2
-Version:	2.10.2
+Version:	2.10.3
 Release:	1
 License:	LGPL v2+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gtksourceviewmm/2.10/gtksourceviewmm-%{version}.tar.xz
-# Source0-md5:	7d9bdc72643fde8ba4ecd3cff20d1df1
+# Source0-md5:	89d75c441ceeb071943acad1fe48d973
 URL:		http://www.gnome.org/projects/gtksourceviewmm/
 BuildRequires:	autoconf >= 2.62
 BuildRequires:	automake >= 1:1.9

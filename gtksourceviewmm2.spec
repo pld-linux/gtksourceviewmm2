@@ -6,7 +6,7 @@ Summary:	A C++ binding of GtkSourceView2
 Summary(pl.UTF-8):	Wiązania C++ dla GtkSourceView2
 Name:		gtksourceviewmm2
 Version:	2.10.3
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gtksourceviewmm/2.10/gtksourceviewmm-%{version}.tar.xz

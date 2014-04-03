@@ -1,12 +1,12 @@
 #
 # Conditional build:
 %bcond_without	apidocs		# don't generate documentation with doxygen
-#
+
 Summary:	A C++ binding of GtkSourceView2
 Summary(pl.UTF-8):	Wiązania C++ dla GtkSourceView2
 Name:		gtksourceviewmm2
 Version:	2.10.3
-Release:	2
+Release:	3
 License:	LGPL v2+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gtksourceviewmm/2.10/gtksourceviewmm-%{version}.tar.xz
@@ -70,6 +70,9 @@ Summary:	GtkSourceViewMM2 API documentation
 Summary(pl.UTF-8):	Dokumentacja API GtkSourceViewMM2
 Group:		Documentation
 Obsoletes:	libgtksourceviewmm2-apidocs
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 GtkSourceViewMM2 API documentation.

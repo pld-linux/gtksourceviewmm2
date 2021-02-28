@@ -70,9 +70,7 @@ Summary:	GtkSourceViewMM2 API documentation
 Summary(pl.UTF-8):	Dokumentacja API GtkSourceViewMM2
 Group:		Documentation
 Obsoletes:	libgtksourceviewmm2-apidocs
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 GtkSourceViewMM2 API documentation.
